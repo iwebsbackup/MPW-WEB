@@ -1,0 +1,120 @@
+.networks-page {
+  padding-top: 2.5rem;
+  padding-bottom: 4rem;
+}
+
+.networks-list {
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+  margin-top: 1.5rem;
+}
+
+.network-full-card {
+  background: #ffffff;
+  border: 1px solid var(--border-medium);
+  border-left: 5px solid var(--navy);
+  padding: 2rem;
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.02);
+}
+
+.network-full-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 0.75rem;
+  margin-bottom: 0.75rem;
+}
+
+.ref-and-status {
+  display: flex;
+  align-items: center;
+  gap: 0.75rem;
+}
+
+.network-full-ref {
+  font-family: monospace;
+  font-weight: 700;
+  font-size: 0.85rem;
+  color: var(--text-muted);
+}
+
+.published-date {
+  font-size: 0.8rem;
+  color: var(--text-light);
+  font-family: monospace;
+}
+
+.network-full-title {
+  font-size: 1.45rem;
+  margin-bottom: 1.25rem;
+  color: var(--text-main);
+}
+
+.network-detail-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 1rem;
+  background: #fafafa;
+  border: 1px solid var(--border-light);
+  padding: 1rem;
+  margin-bottom: 1.25rem;
+}
+
+.detail-box {
+  display: flex;
+  flex-direction: column;
+  gap: 0.2rem;
+}
+
+.detail-label {
+  font-size: 0.72rem;
+  color: var(--text-light);
+  text-transform: uppercase;
+  font-weight: 600;
+}
+
+.detail-value {
+  font-size: 0.85rem;
+  color: var(--text-main);
+  font-weight: 600;
+}
+
+.network-narrative {
+  margin-bottom: 1.5rem;
+}
+
+.network-narrative h4 {
+  font-size: 0.95rem;
+  margin-bottom: 0.4rem;
+  color: var(--primary);
+}
+
+.network-narrative p {
+  font-size: 0.9rem;
+  line-height: 1.6;
+  color: var(--text-body);
+}
+
+.network-full-footer {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  border-top: 1px solid var(--border-light);
+  padding-top: 1rem;
+  flex-wrap: wrap;
+  gap: 1rem;
+}
+
+.statutory-link-note {
+  font-size: 0.8rem;
+  color: var(--text-muted);
+  font-style: italic;
+}
+
+@media (max-width: 768px) {
+  .network-detail-grid {
+    grid-template-columns: 1fr;
+  }
+}

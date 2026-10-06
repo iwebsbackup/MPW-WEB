@@ -1,0 +1,129 @@
+.numbers-page {
+  padding-top: 2.5rem;
+  padding-bottom: 4rem;
+}
+
+.appendix-full-sequence {
+  margin-bottom: 3rem;
+}
+
+.sequence-banner {
+  background: var(--navy);
+  color: #fff;
+  padding: 1rem 1.5rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  border-bottom: 3px solid var(--primary);
+}
+
+.sequence-banner h3 {
+  color: #fff;
+  font-size: 1.15rem;
+  margin: 0;
+}
+
+.audit-period-tag {
+  font-family: monospace;
+  font-size: 0.8rem;
+  background: #2e4466;
+  padding: 0.2rem 0.6rem;
+  border-radius: 2px;
+}
+
+.appendix-sequence-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 1.5rem;
+  margin-top: 1.5rem;
+}
+
+.sequence-card {
+  background: #ffffff;
+  border: 1px solid var(--border-medium);
+  padding: 2rem 1.5rem;
+  display: flex;
+  flex-direction: column;
+}
+
+.sequence-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 1rem;
+}
+
+.order-pill {
+  font-family: monospace;
+  font-size: 0.68rem;
+  font-weight: 700;
+  background: #18181b;
+  color: #fff;
+  padding: 0.2rem 0.5rem;
+}
+
+.db-sync-pill {
+  font-size: 0.65rem;
+  background: #ecfdf5;
+  color: #065f46;
+  border: 1px solid #a7f3d0;
+  padding: 0.15rem 0.4rem;
+  font-weight: 700;
+}
+
+.sequence-number {
+  font-size: 3.5rem;
+  font-weight: 800;
+  font-family: var(--font-brand);
+  color: var(--primary);
+  line-height: 1;
+  margin-bottom: 0.5rem;
+}
+
+.sequence-name {
+  font-size: 1.15rem;
+  margin-bottom: 0.5rem;
+}
+
+.sequence-desc {
+  font-size: 0.85rem;
+  color: var(--text-muted);
+  line-height: 1.5;
+  margin-bottom: 1rem;
+  flex-grow: 1;
+}
+
+.sequence-submetrics {
+  border-top: 1px solid var(--border-light);
+  padding-top: 0.75rem;
+  font-size: 0.8rem;
+}
+
+.submetric-row {
+  display: flex;
+  gap: 1rem;
+  flex-wrap: wrap;
+}
+
+.district-composition-card {
+  background: #ffffff;
+  border: 1px solid var(--border-medium);
+  padding: 2rem;
+}
+
+.district-composition-card h3 {
+  font-size: 1.35rem;
+  margin-bottom: 0.5rem;
+}
+
+.composition-desc {
+  font-size: 0.9rem;
+  color: var(--text-muted);
+  margin-bottom: 1.5rem;
+}
+
+@media (max-width: 992px) {
+  .appendix-sequence-grid {
+    grid-template-columns: 1fr;
+  }
+}

@@ -1,0 +1,103 @@
+.method-page {
+  padding-top: 2.5rem;
+  padding-bottom: 4rem;
+}
+
+.method-section {
+  background: #ffffff;
+  border: 1px solid var(--border-medium);
+  padding: 2rem;
+  margin-bottom: 2rem;
+}
+
+.method-section-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  border-bottom: 2px solid var(--border-dark);
+  padding-bottom: 0.75rem;
+  margin-bottom: 1.5rem;
+}
+
+.method-section-header h3 {
+  font-size: 1.25rem;
+  margin: 0;
+}
+
+.rule-ref {
+  font-family: monospace;
+  font-size: 0.75rem;
+  color: var(--text-light);
+}
+
+.grades-grid,
+.gates-grid,
+.states-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+  gap: 1.25rem;
+}
+
+.grade-card,
+.gate-card,
+.knowledge-state-card {
+  background: #fafafa;
+  border: 1px solid var(--border-light);
+  padding: 1.25rem;
+  display: flex;
+  flex-direction: column;
+}
+
+.grade-badge,
+.gate-number,
+.state-number {
+  font-family: monospace;
+  font-weight: 700;
+  font-size: 0.75rem;
+  background: var(--navy);
+  color: #fff;
+  padding: 0.2rem 0.5rem;
+  align-self: flex-start;
+  margin-bottom: 0.75rem;
+}
+
+.grade-card h4,
+.gate-card h4,
+.knowledge-state-card h4 {
+  font-size: 1rem;
+  margin-bottom: 0.5rem;
+}
+
+.grade-card p,
+.gate-card p,
+.knowledge-state-card p {
+  font-size: 0.82rem;
+  color: var(--text-muted);
+  line-height: 1.5;
+  margin: 0;
+}
+
+.notice-process-box,
+.banned-words-box {
+  background: #fafafa;
+  border: 1px solid var(--border-light);
+  padding: 1.5rem;
+  line-height: 1.6;
+  font-size: 0.9rem;
+}
+
+.receipt-wording-tag {
+  margin-top: 1rem;
+  padding: 0.75rem;
+  background: #ecfdf5;
+  border: 1px solid #a7f3d0;
+  color: #065f46;
+}
+
+.receipt-wording-tag code {
+  font-family: monospace;
+  font-weight: 700;
+  background: #fff;
+  padding: 0.2rem 0.5rem;
+  border: 1px solid #a7f3d0;
+}

@@ -1,0 +1,215 @@
+:root {
+  --primary: #8b1e1e;
+  --primary-hover: #701818;
+  --primary-light: #fcf1f1;
+  --primary-border: #f2cece;
+  
+  --bg-page: #f4f4f4;
+  --bg-card: #ffffff;
+  --bg-alt: #eaeaea;
+  
+  --text-main: #111111;
+  --text-body: #222222;
+  --text-muted: #555555;
+  --text-light: #777777;
+  
+  --border-light: #e5e5e5;
+  --border-medium: #d1d1d1;
+  --border-dark: #222222;
+  
+  /* Status Colors */
+  --status-verified-text: #065f46;
+  --status-verified-bg: #ecfdf5;
+  --status-verified-border: #a7f3d0;
+  
+  --status-concluded-text: #1e40af;
+  --status-concluded-bg: #eff6ff;
+  --status-concluded-border: #bfdbfe;
+  
+  --status-referred-text: #92400e;
+  --status-referred-bg: #fffbeb;
+  --status-referred-border: #fde68a;
+  
+  --status-notice-text: #5b21b6;
+  --status-notice-bg: #f5f3ff;
+  --status-notice-border: #ddd6fe;
+
+  --font-sans: 'Inter', 'Noto Sans Devanagari', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+  --font-serif: 'Lora', 'Georgia', 'Times New Roman', serif;
+  --font-brand: 'Cinzel', 'Lora', serif;
+
+  --max-width: 1200px;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  font-family: var(--font-sans);
+  background-color: var(--bg-page);
+  color: var(--text-body);
+  line-height: 1.6;
+}
+
+body {
+  min-height: 100vh;
+  background-color: var(--bg-page);
+  display: flex;
+  flex-direction: column;
+}
+
+#root {
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  background-color: var(--bg-page);
+}
+
+main {
+  flex: 1;
+}
+
+a {
+  color: inherit;
+  text-decoration: none;
+}
+
+a:hover {
+  text-decoration: underline;
+}
+
+button {
+  font-family: inherit;
+  cursor: pointer;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  font-family: var(--font-serif);
+  color: var(--text-main);
+  line-height: 1.25;
+  font-weight: 700;
+}
+
+.container {
+  width: 100%;
+  max-width: 100%;
+  margin: 0 auto;
+  padding: 0 1.5rem;
+} 
+/* .container {
+  width: 100%;
+  max-width: 100%;
+  margin: 0;
+  padding: 0 20px;
+} */
+/* Status Badges */
+.badge {
+  display: inline-flex;
+  align-items: center;
+  padding: 0.2rem 0.6rem;
+  font-size: 0.75rem;
+  font-weight: 700;
+  letter-spacing: 0.04em;
+  text-transform: uppercase;
+  border-radius: 2px;
+  border: 1px solid transparent;
+  font-family: var(--font-sans);
+  white-space: nowrap;
+}
+
+.badge-verified {
+  color: var(--status-verified-text);
+  background: var(--status-verified-bg);
+  border-color: var(--status-verified-border);
+}
+
+.badge-concluded {
+  color: var(--status-concluded-text);
+  background: var(--status-concluded-bg);
+  border-color: var(--status-concluded-border);
+}
+
+.badge-referred {
+  color: var(--status-referred-text);
+  background: var(--status-referred-bg);
+  border-color: var(--status-referred-border);
+}
+
+.badge-notice {
+  color: var(--status-notice-text);
+  background: var(--status-notice-bg);
+  border-color: var(--status-notice-border);
+}
+
+.badge-neutral {
+  color: var(--text-muted);
+  background: #f4f4f5;
+  border-color: var(--border-light);
+}
+
+/* Button styles */
+.btn-primary {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.5rem;
+  background-color: var(--primary);
+  color: #ffffff;
+  padding: 0.65rem 1.25rem;
+  font-size: 0.9rem;
+  font-weight: 600;
+  border: 1px solid var(--primary);
+  border-radius: 2px;
+  transition: all 0.15s ease-in-out;
+  text-decoration: none !important;
+}
+
+.btn-primary:hover {
+  background-color: var(--primary-hover);
+  border-color: var(--primary-hover);
+}
+
+.btn-outline {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.5rem;
+  background-color: transparent;
+  color: var(--text-main);
+  padding: 0.65rem 1.25rem;
+  font-size: 0.9rem;
+  font-weight: 600;
+  border: 1px solid var(--border-dark);
+  border-radius: 2px;
+  transition: all 0.15s ease-in-out;
+  text-decoration: none !important;
+}
+
+.btn-outline:hover {
+  background-color: var(--border-dark);
+  color: #ffffff;
+}
+
+/* Newspaper Section Header */
+.section-header {
+  margin-bottom: 1.5rem;
+  padding-bottom: 0.75rem;
+  border-bottom: 2px solid var(--border-dark);
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-end;
+  gap: 1rem;
+}
+
+.section-title {
+  font-size: 1.6rem;
+  font-family: var(--font-serif);
+}
+
+.section-subtitle {
+  font-size: 0.9rem;
+  color: var(--text-muted);
+  font-family: var(--font-sans);
+  margin-top: 0.25rem;
+}

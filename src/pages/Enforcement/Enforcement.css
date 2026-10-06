@@ -1,0 +1,74 @@
+.enforcement-page {
+  padding-top: 2.5rem;
+  padding-bottom: 4rem;
+}
+
+.non-action-states-grid {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 1.25rem;
+  margin-bottom: 2rem;
+}
+
+.state-box {
+  background: #ffffff;
+  border: 1px solid var(--border-medium);
+  padding: 1.5rem;
+  display: flex;
+  flex-direction: column;
+}
+
+.state-code {
+  font-family: monospace;
+  font-size: 0.7rem;
+  font-weight: 700;
+  color: var(--text-light);
+  margin-bottom: 0.35rem;
+}
+
+.state-box h4 {
+  font-size: 1rem;
+  margin-bottom: 0.5rem;
+  color: var(--text-main);
+  min-height: 2.4rem;
+}
+
+.state-count {
+  font-size: 1.5rem;
+  font-weight: 800;
+  color: var(--primary);
+  margin-bottom: 0.5rem;
+  font-family: var(--font-brand);
+}
+
+.state-box p {
+  font-size: 0.78rem;
+  color: var(--text-muted);
+  line-height: 1.4;
+  margin: 0;
+}
+
+.state-no-response { border-top: 4px solid #ef4444; }
+.state-acknowledged { border-top: 4px solid #f59e0b; }
+.state-declined { border-top: 4px solid #6b7280; }
+.state-no-violation { border-top: 4px solid #10b981; }
+
+.elapsed-days-badge {
+  font-family: monospace;
+  font-weight: 600;
+  background: #f4f4f5;
+  padding: 0.2rem 0.5rem;
+  border-radius: 2px;
+}
+
+@media (max-width: 992px) {
+  .non-action-states-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@media (max-width: 576px) {
+  .non-action-states-grid {
+    grid-template-columns: 1fr;
+  }
+}

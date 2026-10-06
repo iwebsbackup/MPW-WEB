@@ -1,0 +1,151 @@
+.mpw-investigation-card {
+  background: #ffffff;
+  border: 1px solid var(--border-medium);
+  border-top: 3px solid var(--primary);
+  padding: 1.75rem;
+  display: flex;
+  flex-direction: column;
+  transition: transform 0.15s ease, box-shadow 0.15s ease;
+  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.03);
+}
+
+.mpw-investigation-card:hover {
+  border-color: var(--primary);
+  box-shadow: 0 4px 12px rgba(139, 30, 30, 0.08);
+}
+
+.card-top-bar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 0.5rem;
+  margin-bottom: 0.75rem;
+}
+
+.card-ref-code {
+  font-family: monospace;
+  font-size: 0.8rem;
+  font-weight: 700;
+  color: var(--text-muted);
+}
+
+.card-badges {
+  display: flex;
+  gap: 0.4rem;
+  align-items: center;
+}
+
+.card-heading {
+  font-size: 1.25rem;
+  line-height: 1.35;
+  margin-bottom: 0.85rem;
+  font-family: var(--font-serif);
+}
+
+.card-heading a {
+  color: var(--text-main);
+  text-decoration: none;
+}
+
+.card-heading a:hover {
+  color: var(--primary);
+  text-decoration: underline;
+}
+
+.card-meta-box {
+  background: #fafafa;
+  border: 1px solid var(--border-light);
+  padding: 0.65rem 0.85rem;
+  display: flex;
+  flex-direction: column;
+  gap: 0.25rem;
+  font-size: 0.82rem;
+  margin-bottom: 1rem;
+}
+
+.meta-line {
+  display: flex;
+  gap: 0.5rem;
+}
+
+.meta-label {
+  color: var(--text-light);
+  font-weight: 600;
+}
+
+.meta-value {
+  color: var(--text-body);
+}
+
+.card-summary {
+  font-size: 0.88rem;
+  color: var(--text-body);
+  line-height: 1.6;
+  margin-bottom: 1.25rem;
+  flex-grow: 1;
+}
+
+.card-districts-row {
+  margin-bottom: 1rem;
+  font-size: 0.78rem;
+}
+
+.districts-label {
+  color: var(--text-light);
+  font-weight: 600;
+  display: block;
+  margin-bottom: 0.3rem;
+}
+
+.districts-pills {
+  display: flex;
+  gap: 0.35rem;
+  flex-wrap: wrap;
+}
+
+.district-pill {
+  background: #f4f4f4;
+  border: 1px solid #e0e0e0;
+  padding: 0.15rem 0.45rem;
+  border-radius: 2px;
+  color: var(--text-muted);
+  font-size: 0.72rem;
+}
+
+.card-footer-action {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  border-top: 1px solid var(--border-light);
+  padding-top: 0.85rem;
+  gap: 0.5rem;
+}
+
+.card-date {
+  font-size: 0.75rem;
+  color: var(--text-light);
+  font-family: monospace;
+}
+
+.card-action-links {
+  display: flex;
+  align-items: center;
+  gap: 0.85rem;
+}
+
+.card-method-link {
+  font-size: 0.78rem;
+  color: var(--primary);
+  font-weight: 600;
+}
+
+.card-read-link {
+  font-size: 0.82rem;
+  color: var(--text-main);
+  font-weight: 700;
+}
+
+.card-read-link:hover {
+  color: var(--primary);
+}

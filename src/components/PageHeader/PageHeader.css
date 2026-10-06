@@ -1,0 +1,55 @@
+.mpw-page-header {
+  background: #ffffff;
+  border: 1px solid var(--border-medium);
+  border-top: 4px solid var(--primary);
+  padding: 2rem 2.25rem;
+  margin-bottom: 2rem;
+  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.04);
+}
+
+.mpw-header-tag {
+  display: inline-block;
+  background: var(--primary);
+  color: #ffffff;
+  font-size: 0.7rem;
+  font-weight: 700;
+  letter-spacing: 0.08em;
+  padding: 0.2rem 0.55rem;
+  text-transform: uppercase;
+  margin-bottom: 0.75rem;
+  border-radius: 2px;
+}
+
+.mpw-header-title {
+  font-size: 2.15rem;
+  font-family: var(--font-serif);
+  color: var(--text-main);
+  line-height: 1.2;
+  margin-bottom: 0.65rem;
+}
+
+.mpw-header-subtitle {
+  font-size: 0.98rem;
+  color: var(--text-muted);
+  line-height: 1.6;
+  max-width: 950px;
+  margin: 0;
+}
+
+.mpw-header-meta {
+  margin-top: 1rem;
+  padding-top: 0.85rem;
+  border-top: 1px solid var(--border-light);
+  font-size: 0.8rem;
+  color: var(--text-light);
+  font-family: monospace;
+}
+
+@media (max-width: 768px) {
+  .mpw-page-header {
+    padding: 1.5rem;
+  }
+  .mpw-header-title {
+    font-size: 1.6rem;
+  }
+}

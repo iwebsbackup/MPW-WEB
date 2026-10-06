@@ -1,0 +1,540 @@
+.home-page {
+  padding-bottom: 3rem;
+}
+
+/* 1. Above the Fold Mandate Hero */
+.mandate-hero-section {
+  background: linear-gradient(180deg, #fbf2f2 0%, #faf9f6 100%);
+  border-bottom: 2px solid var(--border-light);
+  padding: 3rem 0 2.5rem;
+}
+
+.mandate-card {
+  background: #ffffff;
+  border: 1px solid var(--border-medium);
+  border-left: 6px solid var(--primary);
+  padding: 2.25rem;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.03);
+}
+
+.mandate-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 1rem;
+  flex-wrap: wrap;
+  gap: 0.5rem;
+}
+
+.mandate-kicker {
+  font-size: 0.72rem;
+  font-weight: 700;
+  letter-spacing: 0.08em;
+  color: var(--primary);
+  text-transform: uppercase;
+  background: var(--primary-light);
+  padding: 0.2rem 0.5rem;
+  border: 1px solid var(--primary-border);
+}
+
+.mandate-reg-ref {
+  font-family: monospace;
+  font-size: 0.72rem;
+  color: var(--text-light);
+}
+
+.mandate-headline {
+  font-size: 2rem;
+  line-height: 1.25;
+  color: var(--text-main);
+  margin-bottom: 1.25rem;
+  font-weight: 700;
+}
+
+.mandate-body {
+  border-top: 1px solid var(--border-light);
+  border-bottom: 1px solid var(--border-light);
+  padding: 1.25rem 0;
+  margin-bottom: 1.5rem;
+}
+
+.mandate-paragraph {
+  font-size: 1.05rem;
+  line-height: 1.7;
+  color: #27272a;
+  font-family: var(--font-sans);
+}
+
+.mandate-footer-actions {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 1.25rem;
+}
+
+.mandate-buttons {
+  display: flex;
+  gap: 1rem;
+  flex-wrap: wrap;
+}
+
+.current-numbers-banner {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.75rem;
+  background: #f4f4f5;
+  padding: 0.5rem 1rem;
+  border: 1px solid var(--border-light);
+  border-radius: 2px;
+}
+
+.numbers-pill-icon {
+  background: var(--navy);
+  color: #fff;
+  font-size: 0.65rem;
+  font-weight: 700;
+  padding: 0.15rem 0.45rem;
+  letter-spacing: 0.05em;
+}
+
+.numbers-link {
+  font-size: 0.88rem;
+  font-weight: 600;
+  color: var(--primary);
+  text-decoration: none;
+}
+
+.numbers-link:hover {
+  text-decoration: underline;
+}
+
+/* 2. Networks Primary Product */
+.section-networks-primary {
+  padding: 3.5rem 0;
+  background-color: #ffffff;
+  border-bottom: 1px solid var(--border-light);
+}
+
+.primary-product-badge {
+  display: inline-block;
+  background: var(--navy);
+  color: #ffffff;
+  font-size: 0.68rem;
+  font-weight: 700;
+  letter-spacing: 0.07em;
+  padding: 0.15rem 0.5rem;
+  margin-bottom: 0.5rem;
+}
+
+.section-view-all {
+  font-size: 0.88rem;
+  font-weight: 600;
+  color: var(--primary);
+  white-space: nowrap;
+}
+
+.section-view-all:hover {
+  text-decoration: underline;
+}
+
+.networks-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 1.5rem;
+  margin-top: 1.5rem;
+}
+
+.network-card {
+  background: #ffffff;
+  border: 1px solid var(--border-medium);
+  padding: 1.5rem;
+  display: flex;
+  flex-direction: column;
+  transition: transform 0.15s ease, box-shadow 0.15s ease;
+}
+
+.network-card:hover {
+  border-color: var(--primary);
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.05);
+}
+
+.network-card-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 0.75rem;
+}
+
+.network-ref {
+  font-family: monospace;
+  font-size: 0.75rem;
+  font-weight: 700;
+  color: var(--text-muted);
+}
+
+.network-card-title {
+  font-size: 1.15rem;
+  line-height: 1.35;
+  margin-bottom: 0.85rem;
+  min-height: 2.8rem;
+}
+
+.network-card-title a {
+  color: var(--text-main);
+  text-decoration: none;
+}
+
+.network-card-title a:hover {
+  color: var(--primary);
+}
+
+.network-meta-row {
+  display: flex;
+  flex-direction: column;
+  gap: 0.35rem;
+  font-size: 0.8rem;
+  color: var(--text-muted);
+  background: #fbfbfb;
+  padding: 0.65rem;
+  border: 1px solid var(--border-light);
+  margin-bottom: 1rem;
+}
+
+.network-card-summary {
+  font-size: 0.85rem;
+  color: var(--text-body);
+  line-height: 1.55;
+  margin-bottom: 1.25rem;
+  flex-grow: 1;
+}
+
+.network-card-footer {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  border-top: 1px solid var(--border-light);
+  padding-top: 0.75rem;
+  gap: 0.5rem;
+}
+
+.districts-tags {
+  display: flex;
+  align-items: center;
+  gap: 0.35rem;
+  flex-wrap: wrap;
+}
+
+.districts-label {
+  font-size: 0.72rem;
+  color: var(--text-light);
+}
+
+.district-tag {
+  background: #f4f4f5;
+  font-size: 0.7rem;
+  padding: 0.1rem 0.35rem;
+  border-radius: 2px;
+  color: var(--text-muted);
+}
+
+.method-link-pill {
+  font-size: 0.75rem;
+  color: var(--navy);
+  font-weight: 600;
+  white-space: nowrap;
+}
+
+/* 3. Case Records Section */
+.section-case-records {
+  padding: 3.5rem 0;
+  background-color: var(--bg-page);
+  border-bottom: 1px solid var(--border-light);
+}
+
+.cases-mandatory-notice {
+  background: #ecfdf5;
+  border: 1px solid #a7f3d0;
+  color: #065f46;
+  padding: 0.65rem 1rem;
+  font-size: 0.85rem;
+  font-weight: 600;
+  margin-bottom: 1.25rem;
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+}
+
+.filter-controls-bar {
+  display: flex;
+  align-items: center;
+  gap: 1.5rem;
+  background: #ffffff;
+  padding: 0.85rem 1.25rem;
+  border: 1px solid var(--border-light);
+  margin-bottom: 1rem;
+  flex-wrap: wrap;
+}
+
+.filter-group {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  font-size: 0.85rem;
+}
+
+.filter-group label {
+  color: var(--text-muted);
+  font-weight: 500;
+}
+
+.filter-select {
+  padding: 0.35rem 0.75rem;
+  font-size: 0.82rem;
+  border: 1px solid var(--border-medium);
+  background: #fff;
+  border-radius: 2px;
+  font-family: inherit;
+}
+
+.filter-sort-indicator {
+  margin-left: auto;
+  font-size: 0.78rem;
+  color: var(--text-light);
+  font-style: italic;
+}
+
+.case-ref-cell a {
+  font-family: monospace;
+  font-weight: 700;
+  color: var(--primary);
+}
+
+.case-subject-title {
+  font-weight: 600;
+  color: var(--text-main);
+  margin-bottom: 0.2rem;
+}
+
+.case-summary-subtext {
+  font-size: 0.78rem;
+  color: var(--text-muted);
+  line-height: 1.4;
+}
+
+.council-ref-cell {
+  font-size: 0.8rem;
+  font-family: monospace;
+  color: var(--text-body);
+}
+
+.verified-row-highlight {
+  background-color: #f7fee7;
+}
+
+.method-mini-link {
+  font-size: 0.75rem;
+  color: var(--navy);
+  font-weight: 600;
+  text-decoration: underline;
+}
+
+/* 4. Numbers Summary Section */
+.section-numbers-summary {
+  padding: 3.5rem 0;
+  background-color: #ffffff;
+  border-bottom: 1px solid var(--border-light);
+}
+
+.appendix-rule-callout {
+  background: #eff6ff;
+  border: 1px solid #bfdbfe;
+  color: #1e40af;
+  padding: 0.65rem 1rem;
+  font-size: 0.82rem;
+  margin-bottom: 1.5rem;
+}
+
+.appendix-metrics-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 1.5rem;
+}
+
+.appendix-metric-card {
+  background: #fafafa;
+  border: 1px solid var(--border-medium);
+  border-top: 4px solid var(--navy);
+  padding: 2rem 1.5rem;
+  display: flex;
+  flex-direction: column;
+}
+
+.metric-order-badge {
+  align-self: flex-start;
+  background: #27272a;
+  color: #fff;
+  font-size: 0.68rem;
+  font-weight: 700;
+  padding: 0.15rem 0.5rem;
+  margin-bottom: 1rem;
+  text-transform: uppercase;
+}
+
+.metric-number-display {
+  font-size: 3.25rem;
+  font-weight: 800;
+  font-family: var(--font-brand);
+  color: var(--primary);
+  line-height: 1;
+  margin-bottom: 0.5rem;
+}
+
+.metric-title {
+  font-size: 1.1rem;
+  margin-bottom: 0.5rem;
+}
+
+.metric-explanation {
+  font-size: 0.82rem;
+  color: var(--text-muted);
+  line-height: 1.45;
+  margin-bottom: 1rem;
+  flex-grow: 1;
+}
+
+.metric-sub-breakdown {
+  border-top: 1px solid var(--border-light);
+  padding-top: 0.65rem;
+  font-size: 0.75rem;
+  color: var(--text-body);
+}
+
+/* 5. Deliberately Absent Section */
+.section-deliberately-absent {
+  padding: 3.5rem 0;
+  background-color: #f4f4f5;
+  border-bottom: 1px solid var(--border-light);
+}
+
+.absent-card {
+  background: #ffffff;
+  border: 1px solid var(--border-medium);
+  border-left: 5px solid #4b5563;
+  padding: 2rem;
+}
+
+.absent-badge {
+  background: #374151;
+  color: #ffffff;
+  font-size: 0.68rem;
+  font-weight: 700;
+  padding: 0.15rem 0.5rem;
+  letter-spacing: 0.06em;
+}
+
+.absent-title {
+  font-size: 1.35rem;
+  margin-top: 0.5rem;
+  margin-bottom: 0.5rem;
+}
+
+.absent-explanation {
+  font-size: 0.9rem;
+  color: var(--text-muted);
+  margin-bottom: 1.5rem;
+  line-height: 1.6;
+}
+
+.absent-grid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 1.5rem;
+  border-top: 1px solid var(--border-light);
+  padding-top: 1.25rem;
+}
+
+.absent-item {
+  display: flex;
+  gap: 0.75rem;
+  align-items: flex-start;
+}
+
+.absent-icon {
+  background: #fee2e2;
+  color: #dc2626;
+  font-weight: 800;
+  font-size: 0.85rem;
+  width: 22px;
+  height: 22px;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 50%;
+  flex-shrink: 0;
+}
+
+.absent-item strong {
+  font-size: 0.88rem;
+  color: var(--text-main);
+  display: block;
+  margin-bottom: 0.2rem;
+}
+
+.absent-item p {
+  font-size: 0.8rem;
+  color: var(--text-muted);
+  line-height: 1.45;
+  margin: 0;
+}
+
+/* 6. Method CTA Banner */
+.section-method-cta {
+  background: #ffffff;
+  padding: 2.5rem 0;
+}
+
+.method-cta-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 1.5rem;
+}
+
+.method-cta-text h3 {
+  font-size: 1.35rem;
+  margin-bottom: 0.35rem;
+}
+
+.method-cta-text p {
+  font-size: 0.88rem;
+  color: var(--text-muted);
+}
+
+/* Responsive adjustments */
+@media (max-width: 992px) {
+  .networks-grid,
+  .appendix-metrics-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .absent-grid {
+    grid-template-columns: 1fr;
+  }
+}
+
+@media (max-width: 768px) {
+  .mandate-headline {
+    font-size: 1.5rem;
+  }
+
+  .mandate-card {
+    padding: 1.5rem;
+  }
+
+  .mandate-footer-actions {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+}
